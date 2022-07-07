@@ -27,6 +27,16 @@ build:
         - branches
         - tags
 
+publish:
+    stage: publish
+    script:
+        - docker pull $CI_REGISTRY_IMAGE:$DOCKER_IMAGE_TAG
+        - docker tag $CI_REGISTRY_IMAGE:$DOCKER_IMAGE_TAG $DOCKER_REGISTRY_URL/$CI_PROJECT_NAME:$DOCKER_IMAGE_TAG
+        - docker push $DOCKER_REGISTRY_URL/$CI_PROJECT_NAME:$DOCKER_IMAGE_TAG
+    only:
+        - main
+        - tags
+
 create-gitlab-artifact-from-build:
     stage: build-artifact
     image: $CI_REGISTRY_IMAGE:latest
