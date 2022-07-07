@@ -1,0 +1,11 @@
+{
+    "description": "Create gitlab artifact from build in docker image",
+    "topics": [
+        "artifact",
+        "build",
+        "ci",
+        "docker",
+        "gitlab"
+    ],
+    "homepage": "https://github.com/flux-caps/flux-docker-gitlab-build-artifact"
+}
