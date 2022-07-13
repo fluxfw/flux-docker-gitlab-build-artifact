@@ -1,5 +1,5 @@
 {
-    "version": "2022-07-12-1",
+    "version": "2022-07-13-1",
     "description": "Create gitlab artifact from build in docker image",
     "topics": [
         "artifact",
@@ -8,5 +8,5 @@
         "docker",
         "gitlab"
     ],
-    "homepage": "https://github.com/flux-caps/flux-docker-gitlab-build-artifact"
+    "homepage": "https://github.com/flux-eco/flux-docker-gitlab-build-artifact"
 }
