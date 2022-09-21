@@ -1,5 +1,5 @@
 {
-    "version": "2022-07-13-1",
+    "version": "2022-09-21-1",
     "description": "Create gitlab artifact from build in docker image",
     "topics": [
         "artifact",
